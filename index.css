@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.nav{
+    background-color: rgb(40, 40, 59);
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 5%;
+    transition: all 1s;
+}
+.nav h1,a{
+    color: white;
+}
+.nav h1:hover{
+    cursor: pointer;
+}
+.nav span{
+    color: rgb(255, 169, 64);
+}
+.nav ul{
+    list-style: none;
+    display: flex;
+    margin-top: 10px;
+}
+.nav ul>li{
+    padding: 0px 20px;
+}
+.nav ul li a{
+    text-decoration: none;
+    font-size: large;
+    padding: 0 15px;
+    border-right: .5px solid rgba(245, 222, 179, 0);
+    border-left: .5px solid rgba(245, 222, 179, 0);
+}
+.nav ul li a:hover{
+    color: rgb(249, 162, 56);
+
+    transition: all .5s;
+    border-right: .5px solid rgb(255, 255, 255);
+    border-left: .5px solid rgb(255, 255, 255);
+}
+
+.drop_down{
+    padding-top: -5px;
+    color: black;
+    display:none;
+    position: absolute;
+    top: 47px;
+    
+}
+.drop_down ul{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(40, 40, 59);
+    color: white;
+    margin-top: 0px;
+    
+}
+.drop_down ul li{
+    padding: 15px 50px;
+}
+
+#dd:hover .dd1 {
+    display: block;
+}
+#dd2{
+    display: none;
+    position: absolute;
+    left:160px;
+    top: 115px;
+}
+.dd3:hover #dd2{
+    display: block;
+}
